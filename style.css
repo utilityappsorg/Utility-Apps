@@ -35,6 +35,34 @@ h1, h2 {
 .sidebar h2 {
     color: #fff;
 }
+.sidebar-toggle {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+    background: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+.sidebar nav ul li {
+    margin-bottom: 10px;
+}
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1em;
+}
 @media (max-width: 700px) {
     .container {
         flex-direction: column;
@@ -42,5 +70,30 @@ h1, h2 {
     .sidebar {
         width: 100%;
         min-height: auto;
+    }
+}
+/* Mobile layout */
+@media (max-width: 768px) {
+    .sidebar-toggle {
+        display: block;
+    }
+    .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        z-index: 1000;
+        box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+        width: 70vw;
+        max-width: 300px;
+        transform: translateX(-100%);
+        background: #f4f4f4;
+        transition: transform 0.3s ease;
+    }
+    .sidebar.show {
+        transform: translateX(0);
+    }
+    .main {
+        padding: 20px;
     }
 }
