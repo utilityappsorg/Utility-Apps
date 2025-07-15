@@ -4,4 +4,7 @@ document.querySelectorAll('.sidebar a').forEach(link => {
     const externalUrl = this.getAttribute('data-url');
     document.getElementById('app-frame').src = externalUrl;
   });
+
 });
+
+
