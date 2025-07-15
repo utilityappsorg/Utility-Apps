@@ -7,23 +7,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="dashboard">
-    <nav class="sidebar">
-      <h2>My Apps</h2>
-      <ul>
-        <li><a href="#" data-url="https://utilityappsorg.github.io/temperature-converter/">Temperature Converter</a></li>
-        <li><a href="#" data-url="https://utilityappsorg.github.io/Image-Resizer/">Image Resizer</a></li>
-             <li><a href="#" data-url="https://utilityappsorg.github.io/weather-app/">Weather App</a></li>
-        <li><a href="#" data-url="https://utilityappsorg.github.io/resume-builder/">Resume Builder</a></li>
-        <!-- Add more external app links here -->
-      </ul>
-    </nav>
-
-    <main class="main-content">
-      <iframe id="app-frame" src="" frameborder="0"></iframe>
-    </main>
-  </div>
-
-  <script src="script.js"></script>
+    <div class="container">
+        <section class="sidebar">
+            <div class="sidebar-nav">
+                <button class="sidebar-btn" href="https://utilityappsorg.github.io/weather-app/">Weather App</button>
+                <button class="sidebar-btn" href="https://utilityappsorg.github.io/temperature-converter/">Temperature Converter</button>
+                <button class="sidebar-btn" href="https://utilityappsorg.github.io/Image-Resizer/">Browser Resizer</button>
+                <button class="sidebar-btn" href="https://utilityappsorg.github.io/resume-builder/">Resume Builder</button>
+            </div>
+        </section>
+        <section class="main">
+            <nav>
+                <ul>
+                    <li class="nav-title">UTILITY APPS</li>
+                </ul>
+            </nav>
+           <iframe id="app-frame" src="" frameborder="0"></iframe>
+            
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Choicest Fruit</p>
+        <p>Created by Amina | Shogufta | Zarya | Nathan</p>
+    </footer>
 </body>
 </html>

@@ -12,6 +12,21 @@ document.addEventListener('DOMContentLoaded', function() {
             <iframe src="https://utilityapps.org/weatherapp" width="100%" height="500" style="border:none;"></iframe>
         `;
     };
+    window.imageResizerApp = function() {
+        document.getElementById('app-content').innerHTML = `
+            <iframe src="https://utilityappsorg.github.io/Image-Resizer/" width="100%" height="500" style="border:none;"></iframe>
+        `;
+    };
+    window.temperatureConverterApp = function() {
+        document.getElementById('app-content').innerHTML = `
+            <iframe src="https://utilityappsorg.github.io/temperature-converter/" width="100%" height="500" style="border:none;"></iframe>
+        `;
+    };
+    window.resumeBuilderApp = function() {
+        document.getElementById('app-content').innerHTML = `
+            <iframe src="https://utilityappsorg.github.io/resume-builder/" width="100%" height="500" style="border:none;"></iframe>
+        `;
+    };
 });
 document.querySelectorAll('.sidebar a').forEach(link => {
   link.addEventListener('click', function(e) {
