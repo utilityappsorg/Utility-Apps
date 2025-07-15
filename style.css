@@ -49,17 +49,7 @@
 .main-content {
   padding-top: 4.5rem; /* space for fixed nav */
 }
-@media (max-width: 768px) {
-  .main-content nav {
-    left: 0;
-    width: 100vw;
-    padding: 0.5rem 0.5rem;
-    font-size: 1rem;
-  }
-  .main-content {
-    padding-top: 3.5rem;
-  }
-}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -127,8 +117,15 @@ iframe {
   .sidebar {
     width: 100%;
   }
-
+  
+  .main-content nav {
+    left: 0;
+    width: 100vw;
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+  }
   .main-content {
+    padding-top: 3.5rem;
     height: calc(100vh - 200px);
   }
 }
