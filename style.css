@@ -133,6 +133,7 @@ h1, h2 {
 .sidebar h2 {
     color: #fff;
 }
+
 @media (max-width: 700px) {
     .sidebar {
         flex-direction: row;
@@ -197,5 +198,4 @@ h1, h2 {
         display: block;
         width: 100%;
     }
-}
 }
