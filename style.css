@@ -26,7 +26,7 @@ body {
     margin-top: 2rem;
 }
 
-.sidebar-btn {
+.sidebar a{
     background: #1976d2;
     color: #fff;
     border: none;
@@ -153,7 +153,7 @@ h1, h2 {
         -webkit-overflow-scrolling: touch;
         padding-bottom: 0.5rem;
     }
-    .sidebar-btn {
+    .sidebar a {
         flex: 0 0 70vw;
         margin: 0.25rem 0.25rem;
         font-size: 1rem;
