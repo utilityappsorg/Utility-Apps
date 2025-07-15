@@ -1,3 +1,65 @@
+/* Homepage styles */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 350px;
+  text-align: center;
+  color: #333;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  margin: 2rem auto;
+  max-width: 600px;
+  padding: 2rem 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .homepage {
+    margin: 1rem 0.2rem;
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+}
+/* Main nav at top, only as wide as main-content */
+.main-content nav {
+  position: fixed;
+  top: 0;
+  left: 220px; /* width of sidebar */
+  width: calc(100% - 220px);
+  background: #1976d2;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(21, 101, 192, 0.08);
+  font-size: 1.1rem;
+  z-index: 1000;
+  
+}
+
+.nav-title {
+  font-weight: bold;
+  margin-right: 1rem;
+  list-style-type: none;
+}
+.main-content {
+  padding-top: 4.5rem; /* space for fixed nav */
+}
+@media (max-width: 768px) {
+  .main-content nav {
+    left: 0;
+    width: 100vw;
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+  }
+  .main-content {
+    padding-top: 3.5rem;
+  }
+}
 body, html {
   margin: 0;
   padding: 0;
