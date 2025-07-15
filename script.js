@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', function() {
     const sidebar = document.getElementById('sidebar');
     const toggleBtn = document.getElementById('toggleSidebar');
@@ -28,4 +29,17 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
     };
 });
+
+=======
+document.querySelectorAll('.sidebar a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const externalUrl = this.getAttribute('data-url');
+    document.getElementById('app-frame').src = externalUrl;
+  });
+
+});
+
+
+>>>>>>> 53a5651348606684addadcccb9bbf8b14d2bf2c6
 
