@@ -1,38 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utility Apps</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Utility-Apps Shortcuts Poster.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <title>Choicest Fruit Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <button id="toggleSidebar" class="sidebar-toggle">&#9776;</button>
-        <section class="sidebar" id="sidebar">
-            <div class="sidebar-nav">
-                <button class="sidebar-btn" id="weatherButton" onclick="weatherApp()">Weather App</button>
-                <button class="sidebar-btn">Temperature Converter</button>
-                <button class="sidebar-btn">Browser Resizer</button>
-                <button class="sidebar-btn">Resume Builder</button>
-            </div>
-        </section>
-        <section class="main">
-            <nav>
-                <ul>
-                    <li class="nav-title">UTILITY APPS</li>
-                </ul>
-            </nav>
-            <h1>Hello World</h1>
-            <p>This is a simple HTML document.</p>
-            <div id="app-content"></div>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2025 Choicest Fruit</p>
-        <p>Created by Amina | Shogufta | Zarya | Nathan</p>
-    </footer>
-    <script src="script.js"></script>
+  <div class="dashboard">
+    <nav class="sidebar">
+      <h2>My Apps</h2>
+      <ul>
+        <li><a href="#" data-url="https://utilityappsorg.github.io/temperature-converter/">Temperature Converter</a></li>
+        <li><a href="#" data-url="https://utilityappsorg.github.io/Image-Resizer/">Image Resizer</a></li>
+             <li><a href="#" data-url="https://utilityappsorg.github.io/weather-app/">Weather App</a></li>
+        <li><a href="#" data-url="https://utilityappsorg.github.io/resume-builder/">Resume Builder</a></li>
+        <!-- Add more external app links here -->
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <iframe id="app-frame" src="" frameborder="0"></iframe>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
